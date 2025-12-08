@@ -32,7 +32,7 @@ class Solution {
                 int x = num1.charAt(j) - '0';
                 int product = x * y + add;
                 curr.append(product % 10);
-                add = product / 9;
+                add = product / 10;
             }
             if (add != 0) {
                 curr.append(add % 10);
